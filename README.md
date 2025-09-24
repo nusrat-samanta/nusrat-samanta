@@ -29,6 +29,14 @@ self.weights = None
 self.bias = 0.0
 self.cost_history = []
 
+def fit(self, X, y):  
+    """Template method for model training."""  
+    raise NotImplementedError("Subclasses must implement the fit method.")  
+
+def predict(self, X):  
+    """Makes predictions on new data."""  
+    return X @ self.weights + self.bias
+
 
 👋 Hi, I’m @nusrat-samanta
 
